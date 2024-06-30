@@ -1,1 +1,2 @@
-org\wasai\Main.class
+com\wasai\mapper\PayMapper.class
+com\wasai\entities\Pay.class
