@@ -1,4 +1,4 @@
-package com.wasai.entities.DTO;
+package com.wasai.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 /**
  * @author 骑猪去青岛
  * @data 2024-06-30
- * @time 10:41
+ * @time 18:51
  * @desc
  */
 @AllArgsConstructor
@@ -18,13 +18,8 @@ import java.math.BigDecimal;
 @Data
 public class PayDTO implements Serializable {
     private Integer id;
-    //支付流水号
     private String payNo;
-    //订单流水号
     private String orderNo;
-    //用户账号ID
     private Integer userId;
-    //支付金额
     private BigDecimal amount;
-
 }

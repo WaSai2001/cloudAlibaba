@@ -1,7 +1,7 @@
 package com.wasai.controller;
 
 import com.wasai.entities.Pay;
-import com.wasai.entities.DTO.PayDTO;
+import com.wasai.entities.PayDTO;
 import com.wasai.resp.ResultData;
 import com.wasai.resp.ReturnCodeEnum;
 import com.wasai.service.PayService;
