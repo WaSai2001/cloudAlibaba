@@ -4,26 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e48e3354-a3a4-4c2c-b3ff-4c0e9a6457f1" name="更改" comment="加入全局异常、时间格式、统一返回">
-      <change afterPath="$PROJECT_DIR$/cloud-api-commons/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-api-commons/src/main/java/com/wasai/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-api-commons/src/main/java/com/wasai/exp/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-order80/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/wasai/Main80.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/wasai/config/RestTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/wasai/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="e48e3354-a3a4-4c2c-b3ff-4c0e9a6457f1" name="更改" comment="下订单，做支付流程">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/wasai/Main80.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/wasai/Main80.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/wasai/config/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/wasai/config/RestTemplateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/wasai/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/wasai/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/wasai/controller/PayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/wasai/controller/PayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/wasai/entities/DTO/PayDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-api-commons/src/main/java/com/wasai/entities/PayDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/wasai/resp/ResultData.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-api-commons/src/main/java/com/wasai/resp/ResultData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/wasai/resp/ReturnCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-api-commons/src/main/java/com/wasai/resp/ReturnCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/wasai/controller/PayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/wasai/controller/PayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/wasai/entities/DTO/PayDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/wasai/Main8001.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/wasai/Main8001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/wasai/resp/ResultData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/wasai/resp/ReturnCodeEnum.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +73,8 @@
     "Application.ReturnCodeEnum.executor": "Run",
     "Maven.cloud-api-commons [clean].executor": "Run",
     "Maven.cloud-api-commons [install].executor": "Run",
+    "Maven.cloud-consumer-order80 [clean].executor": "Run",
+    "Maven.cloud-consumer-order80 [install].executor": "Run",
     "Maven.cloud-provider-payment8001 [clean].executor": "Run",
     "Maven.cloud-provider-payment8001 [install].executor": "Run",
     "Maven.mscloudv5 [clean].executor": "Run",
@@ -125,7 +119,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Main80">
+  <component name="RunManager" selected="Spring Boot.Main8001">
     <configuration name="Main8001" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.wasai.Main8001" />
       <module name="cloud-provider-payment8001" />
@@ -207,7 +201,8 @@
       <workItem from="1719713114126" duration="6750000" />
       <workItem from="1719719985218" duration="92000" />
       <workItem from="1719730595252" duration="7970000" />
-      <workItem from="1719751665612" duration="2768000" />
+      <workItem from="1719751665612" duration="3442000" />
+      <workItem from="1719839618208" duration="3424000" />
     </task>
     <task id="LOCAL-00001" summary="支付CURD">
       <option name="closed" value="true" />
@@ -233,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719734549767</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="下订单，做支付流程">
+      <option name="closed" value="true" />
+      <created>1719756553372</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719756553372</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +270,8 @@
     <MESSAGE value="支付CURD" />
     <MESSAGE value="补充提交" />
     <MESSAGE value="加入全局异常、时间格式、统一返回" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入全局异常、时间格式、统一返回" />
+    <MESSAGE value="下订单，做支付流程" />
+    <option name="LAST_COMMIT_MESSAGE" value="下订单，做支付流程" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
