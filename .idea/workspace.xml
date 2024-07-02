@@ -4,18 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e48e3354-a3a4-4c2c-b3ff-4c0e9a6457f1" name="更改" comment="下订单，做支付流程">
+    <list default="true" id="e48e3354-a3a4-4c2c-b3ff-4c0e9a6457f1" name="更改" comment="新增：加入@RequestMapping、@Tag和@Operation规范代码">
+      <change afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9af7212e-c5da-4d83-8c03-87b7f16e224d.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/wasai/Main80.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/wasai/Main80.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/wasai/config/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/wasai/config/RestTemplateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/wasai/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/wasai/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/wasai/Main8001.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/wasai/Main8001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/wasai/controller/PayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/wasai/controller/PayController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/wasai/resp/ResultData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/wasai/resp/ReturnCodeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/wasai/Main8001.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/wasai/Main8001.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/wasai/controller/PayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/wasai/controller/PayController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,51 +65,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "Application.Main8001.executor": "Run",
-    "Application.ReturnCodeEnum.executor": "Run",
-    "Maven.cloud-api-commons [clean].executor": "Run",
-    "Maven.cloud-api-commons [install].executor": "Run",
-    "Maven.cloud-consumer-order80 [clean].executor": "Run",
-    "Maven.cloud-consumer-order80 [install].executor": "Run",
-    "Maven.cloud-provider-payment8001 [clean].executor": "Run",
-    "Maven.cloud-provider-payment8001 [install].executor": "Run",
-    "Maven.mscloudv5 [clean].executor": "Run",
-    "Maven.mscloudv5 [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Main80.executor": "Run",
-    "Spring Boot.Main8001.executor": "Run",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/study/JavaProject/cloudAlibaba/cloud-api-commons/src/main/java/com/wasai",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main8001.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReturnCodeEnum.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cloud-api-commons [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cloud-api-commons [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cloud-consumer-order80 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cloud-consumer-order80 [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cloud-provider-payment8001 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cloud-provider-payment8001 [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mscloudv5 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mscloudv5 [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Main80.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Main8001.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/中科网/兰亭/tuijian-java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;01a29b1a84629445c8af78433a4b2f81&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\study\JavaProject\cloudAlibaba\cloud-api-commons\src\main\java\com\wasai" />
       <recent name="D:\study\JavaProject\cloudAlibaba\cloud-consumer-order80\src\main\java\com\wasai" />
       <recent name="D:\study\JavaProject\cloudAlibaba\cloud-consumer-order80\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java工程师\cloudAlibaba\cloud-provider-payment8001\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -146,19 +150,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="cloudAlibaba" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="cloudAlibaba" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-consumer-order80" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wasai.Main80" />
@@ -182,8 +173,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Main80" />
-        <item itemvalue="Application.ReturnCodeEnum" />
-        <item itemvalue="Application.Main8001" />
       </list>
     </recent_temporary>
   </component>
@@ -203,6 +192,8 @@
       <workItem from="1719730595252" duration="7970000" />
       <workItem from="1719751665612" duration="3442000" />
       <workItem from="1719839618208" duration="3424000" />
+      <workItem from="1719888013646" duration="36000" />
+      <workItem from="1719889344777" duration="3327000" />
     </task>
     <task id="LOCAL-00001" summary="支付CURD">
       <option name="closed" value="true" />
@@ -236,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1719756553372</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="新增：加入@RequestMapping、@Tag和@Operation规范代码">
+      <created>1719882724230</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719882724230</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +251,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -271,7 +269,8 @@
     <MESSAGE value="补充提交" />
     <MESSAGE value="加入全局异常、时间格式、统一返回" />
     <MESSAGE value="下订单，做支付流程" />
-    <option name="LAST_COMMIT_MESSAGE" value="下订单，做支付流程" />
+    <MESSAGE value="新增：加入@RequestMapping、@Tag和@Operation规范代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增：加入@RequestMapping、@Tag和@Operation规范代码" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

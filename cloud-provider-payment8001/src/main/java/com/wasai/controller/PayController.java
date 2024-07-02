@@ -10,8 +10,10 @@ import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.annotation.Resource;
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -25,12 +27,13 @@ import java.util.List;
 @RestController
 @Slf4j
 @Tag(name = "支付服务模块", description = "支付CRUD")
+@RequestMapping("/pay")
 public class PayController {
 
     @Resource
     private PayService payService;
 
-    @PostMapping(value = "pay/add")
+    @PostMapping(value = "/add")
     @Operation(summary = "添加", description = "添加支付信息")
     @Parameters({
             @Parameter(name = "payNo", description = "支付编号", required = true),
@@ -44,14 +47,14 @@ public class PayController {
         return ResultData.success("成功添加记录，返回值：" + i);
     }
 
-    @DeleteMapping(value = "pay/delete/{id}")
+    @DeleteMapping(value = "/delete/{id}")
     @Operation(summary = "删除", description = "删除支付信息")
     public ResultData<String> deletePay(@PathVariable("id") Integer id) {
         int i = payService.delete(id);
         return ResultData.success("成功删除记录，返回值：" + i);
     }
 
-    @PutMapping(value = "pay/update")
+    @PutMapping(value = "/update")
     @Operation(summary = "更新", description = "更新支付信息")
     public ResultData<String> updatePay(@RequestBody PayDTO paydto) {
         Pay pay = new Pay();
@@ -62,14 +65,14 @@ public class PayController {
         return ResultData.success("成功更新记录，返回值：" + i);
     }
 
-    @GetMapping(value = "pay/get/{id}")
+    @GetMapping(value = "/get/{id}")
     @Operation(summary = "根据id查询", description = "根据id查询支付信息")
     public ResultData<Pay> getPayById(@PathVariable("id") Integer id) {
         Pay pay = payService.getById(id);
         return ResultData.success(pay);
     }
 
-    @GetMapping(value = "pay/getAll")
+    @GetMapping(value = "/getAll")
     @Operation(summary = "查询所有", description = "查询所有支付信息")
     public ResultData<List> getAllPay() {
         try{
@@ -78,6 +81,12 @@ public class PayController {
         }catch (Exception e){
             return ResultData.fail(ReturnCodeEnum.RC500.getCode(), e.getMessage());
         }
+    }
+    @Value("${server.port}")
+    private String port;
+    @GetMapping(value = "/get/value")
+    public String getInfoByConsul(@Value("${@wasai.info}")String info){
+        return "wasaiInfo: " + info +"\t"+"port: "+port;
     }
 
 }
