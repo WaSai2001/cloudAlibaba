@@ -14,6 +14,7 @@ import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -28,6 +29,7 @@ import java.util.List;
 @Slf4j
 @Tag(name = "支付服务模块", description = "支付CRUD")
 @RequestMapping("/pay")
+@RefreshScope
 public class PayController {
 
     @Resource
@@ -85,7 +87,7 @@ public class PayController {
     @Value("${server.port}")
     private String port;
     @GetMapping(value = "/get/value")
-    public String getInfoByConsul(@Value("${@wasai.info}")String info){
+    public String getInfoByConsul(@Value("${wasai.info}")String info){
         return "wasaiInfo: " + info +"\t"+"port: "+port;
     }
 
